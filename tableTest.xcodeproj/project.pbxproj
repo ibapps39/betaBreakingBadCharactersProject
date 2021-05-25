@@ -11,6 +11,12 @@
 		3CD1B515265C49BB00D17EB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B514265C49BB00D17EB1 /* ContentView.swift */; };
 		3CD1B517265C49BB00D17EB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD1B516265C49BB00D17EB1 /* Assets.xcassets */; };
 		3CD1B51A265C49BB00D17EB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CD1B519265C49BB00D17EB1 /* Preview Assets.xcassets */; };
+		3CD1B522265C49CB00D17EB1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B521265C49CB00D17EB1 /* Model.swift */; };
+		3CD1B524265C49D300D17EB1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B523265C49D300D17EB1 /* ViewModel.swift */; };
+		3CD1B526265C4ACF00D17EB1 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B525265C4ACF00D17EB1 /* getData.swift */; };
+		3CD1B52A265CB84200D17EB1 /* listOfCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */; };
+		3CD1B52C265CB8AB00D17EB1 /* characterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */; };
+		3CD1B52E265CC38700D17EB1 /* currentCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		3CD1B516265C49BB00D17EB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CD1B519265C49BB00D17EB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CD1B51B265C49BB00D17EB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CD1B521265C49CB00D17EB1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		3CD1B523265C49D300D17EB1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3CD1B525265C4ACF00D17EB1 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
+		3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listOfCharacters.swift; sourceTree = "<group>"; };
+		3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterProfile.swift; sourceTree = "<group>"; };
+		3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			children = (
 				3CD1B512265C49BB00D17EB1 /* tableTestApp.swift */,
 				3CD1B514265C49BB00D17EB1 /* ContentView.swift */,
+				3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */,
+				3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */,
+				3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */,
+				3CD1B523265C49D300D17EB1 /* ViewModel.swift */,
+				3CD1B525265C4ACF00D17EB1 /* getData.swift */,
+				3CD1B521265C49CB00D17EB1 /* Model.swift */,
 				3CD1B516265C49BB00D17EB1 /* Assets.xcassets */,
 				3CD1B51B265C49BB00D17EB1 /* Info.plist */,
 				3CD1B518265C49BB00D17EB1 /* Preview Content */,
@@ -138,7 +156,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CD1B522265C49CB00D17EB1 /* Model.swift in Sources */,
+				3CD1B52E265CC38700D17EB1 /* currentCharacter.swift in Sources */,
 				3CD1B515265C49BB00D17EB1 /* ContentView.swift in Sources */,
+				3CD1B52A265CB84200D17EB1 /* listOfCharacters.swift in Sources */,
+				3CD1B524265C49D300D17EB1 /* ViewModel.swift in Sources */,
+				3CD1B526265C4ACF00D17EB1 /* getData.swift in Sources */,
+				3CD1B52C265CB8AB00D17EB1 /* characterProfile.swift in Sources */,
 				3CD1B513265C49BB00D17EB1 /* tableTestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

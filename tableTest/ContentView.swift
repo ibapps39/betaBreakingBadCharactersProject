@@ -6,16 +6,17 @@
 //
 
 import SwiftUI
-
+let someData = VM.init().getThePeople()
 struct ContentView: View {
+    //@State var isShowingCurrCharacter: Bool = false
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        rootView()
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

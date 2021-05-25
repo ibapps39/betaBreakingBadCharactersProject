@@ -12,6 +12,7 @@ struct tableTestApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+            
         }
     }
 }
