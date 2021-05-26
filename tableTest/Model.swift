@@ -16,13 +16,4 @@ struct CharacterDetails: Codable {
 }
 typealias CharacterArray = [CharacterDetails]
 
-//struct occupation {
-//    var s:String { (s:[String]) -> String
-//        
-//    }
-//}
-enum pickViews {
-    case characterList
-    case characterProfile
-}
 

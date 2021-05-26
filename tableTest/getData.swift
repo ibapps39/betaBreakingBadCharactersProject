@@ -6,7 +6,7 @@
 //
 
 import Foundation
-class ApiService: NSObject {
+class ApiService {
     private let apiSourceUrl = URL(string: "https://breakingbadapi.com/api/characters")!
     
     //callsAPI
@@ -21,16 +21,15 @@ class ApiService: NSObject {
         else {
             return CharacterArray.init()
         }
-        
-        
-//        URLSession.shared.dataTask(with: apiSourceUrl) {
-//            (data, urlResponse, error) in
-//            if let data = data {
-//                let decoder = JSONDecoder()
-//                let CharacterData = try! decoder.decode([CharacterDetails].self, from: data)
-//                completion(CharacterData)
-//            }
-//        }.resume()
-//    }
-}
+    }
+    //        URLSession.shared.dataTask(with: apiSourceUrl) {
+    //            (data, urlResponse, error) in
+    //            if let data = data {
+    //                let decoder = JSONDecoder()
+    //                let CharacterData = try! decoder.decode([CharacterDetails].self, from: data)
+    //                completion(CharacterData)
+    //            }
+    //        }.resume()
+    //    }
+    
 }

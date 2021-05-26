@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,9 @@
 		3CD1B522265C49CB00D17EB1 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B521265C49CB00D17EB1 /* Model.swift */; };
 		3CD1B524265C49D300D17EB1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B523265C49D300D17EB1 /* ViewModel.swift */; };
 		3CD1B526265C4ACF00D17EB1 /* getData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B525265C4ACF00D17EB1 /* getData.swift */; };
-		3CD1B52A265CB84200D17EB1 /* listOfCharacters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */; };
 		3CD1B52C265CB8AB00D17EB1 /* characterProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */; };
 		3CD1B52E265CC38700D17EB1 /* currentCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */; };
+		3CEBE12D265DC7EA0058D4D3 /* alamoFireStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CEBE12C265DC7EA0058D4D3 /* alamoFireStruct.swift */; };
 		4D4C8B11CEA7C612821F9719 /* Pods_tableTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE01A7F8E781075D7D53787 /* Pods_tableTest.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,9 +31,9 @@
 		3CD1B521265C49CB00D17EB1 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		3CD1B523265C49D300D17EB1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		3CD1B525265C4ACF00D17EB1 /* getData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getData.swift; sourceTree = "<group>"; };
-		3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = listOfCharacters.swift; sourceTree = "<group>"; };
 		3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characterProfile.swift; sourceTree = "<group>"; };
 		3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = currentCharacter.swift; sourceTree = "<group>"; };
+		3CEBE12C265DC7EA0058D4D3 /* alamoFireStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alamoFireStruct.swift; sourceTree = "<group>"; };
 		5E420DF339CB9F96032A56AF /* Pods-tableTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableTest.debug.xcconfig"; path = "Target Support Files/Pods-tableTest/Pods-tableTest.debug.xcconfig"; sourceTree = "<group>"; };
 		B67D5D27971106A1CA5215F3 /* Pods-tableTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tableTest.release.xcconfig"; path = "Target Support Files/Pods-tableTest/Pods-tableTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,12 +73,12 @@
 			children = (
 				3CD1B512265C49BB00D17EB1 /* tableTestApp.swift */,
 				3CD1B514265C49BB00D17EB1 /* ContentView.swift */,
-				3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */,
-				3CD1B529265CB84200D17EB1 /* listOfCharacters.swift */,
-				3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */,
 				3CD1B523265C49D300D17EB1 /* ViewModel.swift */,
+				3CD1B52B265CB8AB00D17EB1 /* characterProfile.swift */,
+				3CD1B52D265CC38700D17EB1 /* currentCharacter.swift */,
 				3CD1B525265C4ACF00D17EB1 /* getData.swift */,
 				3CD1B521265C49CB00D17EB1 /* Model.swift */,
+				3CEBE12C265DC7EA0058D4D3 /* alamoFireStruct.swift */,
 				3CD1B516265C49BB00D17EB1 /* Assets.xcassets */,
 				3CD1B51B265C49BB00D17EB1 /* Info.plist */,
 				3CD1B518265C49BB00D17EB1 /* Preview Content */,
@@ -100,7 +100,6 @@
 				5E420DF339CB9F96032A56AF /* Pods-tableTest.debug.xcconfig */,
 				B67D5D27971106A1CA5215F3 /* Pods-tableTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -226,9 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CD1B522265C49CB00D17EB1 /* Model.swift in Sources */,
+				3CEBE12D265DC7EA0058D4D3 /* alamoFireStruct.swift in Sources */,
 				3CD1B52E265CC38700D17EB1 /* currentCharacter.swift in Sources */,
 				3CD1B515265C49BB00D17EB1 /* ContentView.swift in Sources */,
-				3CD1B52A265CB84200D17EB1 /* listOfCharacters.swift in Sources */,
 				3CD1B524265C49D300D17EB1 /* ViewModel.swift in Sources */,
 				3CD1B526265C4ACF00D17EB1 /* getData.swift in Sources */,
 				3CD1B52C265CB8AB00D17EB1 /* characterProfile.swift in Sources */,

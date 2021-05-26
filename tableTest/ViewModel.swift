@@ -40,7 +40,8 @@ struct rootView: View {
                     }
                 }
             }
-            .navigationBarTitle(Text("Breaking Bad Characters"))
+            .navigationBarTitle("Breaking Bad Characters", displayMode: NavigationBarItem.TitleDisplayMode.inline)
+
         }
     }
 }
