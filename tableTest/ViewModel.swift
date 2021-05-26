@@ -12,7 +12,7 @@ class VM {
     init() {
         
     }
-
+    
     func getThePeople() -> CharacterArray {
         let callAPI = ApiService.init().apiGetCharacters()
         return callAPI
@@ -25,9 +25,11 @@ class VM {
         return convertedImage
     }
 }
-
 struct rootView: View {
-        var body: some View {
+//    let memoizedFibonacci = recursiveMemoize { fibonacci, number in
+//        number < 2 ? number : fibonacci(number - 1) + fibonacci(number - 2)
+//    }
+    var body: some View {
         NavigationView {
             List {
                 ForEach(0..<someData.count) { characters in
@@ -41,9 +43,40 @@ struct rootView: View {
                 }
             }
             .navigationBarTitle("Breaking Bad Characters", displayMode: NavigationBarItem.TitleDisplayMode.inline)
-
+            
         }
     }
+}
+func memoize<Input: Hashable, Output>(_ function: @escaping (Input) -> Output) -> (Input) -> Output {
+    // our item cache
+    var storage = [Input: Output]()
+    
+    // send back a new closure that does our calculation
+    return { input in
+        if let cached = storage[input] {
+            return cached
+        }
+        
+        let result = function(input)
+        storage[input] = result
+        return result
+    }
+}
+func recursiveMemoize<Input: Hashable, Output>(_ function: @escaping ((Input) -> Output, Input) -> Output) -> (Input) -> Output {
+    // our item cache
+    var storage = [Input: Output]()
+    var memo: ((Input) -> Output)!
+    
+    memo = { input in
+        if let cached = storage[input] {
+            return cached
+        }
+        
+        let result = function(memo, input)
+        storage[input] = result
+        return result
+    }
+    return memo
 }
 
 

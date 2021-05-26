@@ -9,8 +9,7 @@ import Foundation
 class ApiService {
     private let apiSourceUrl = URL(string: "https://breakingbadapi.com/api/characters")!
     
-    //callsAPI
-    ///@escaping (bbCharacters)->() is calling an instance of bbCharacters that can outlive the closure
+    
     func apiGetCharacters()->CharacterArray {
         
         if let urlData = try? Data(contentsOf: apiSourceUrl) {
@@ -22,6 +21,7 @@ class ApiService {
             return CharacterArray.init()
         }
     }
+    
     //        URLSession.shared.dataTask(with: apiSourceUrl) {
     //            (data, urlResponse, error) in
     //            if let data = data {

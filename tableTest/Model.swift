@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-struct CharacterDetails: Codable {
+struct CharacterDetails: Codable, Hashable {
     let name, birthday: String
     let occupation: [String]
     let img: String
