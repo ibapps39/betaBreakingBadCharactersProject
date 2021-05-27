@@ -14,8 +14,9 @@ struct characterProfile: View {
         VStack {
             Image(uiImage: VM.init().urlToImage(currentCharacter.img)).resizable()
             Text("Name: \(currentCharacter.name)")
+            Text("Occupation(s):")
             Text("\(currentCharacter.occupation.joined(separator: "\n"))")
-            Text("\(currentCharacter.status)")
+            Text("Current Status:\(currentCharacter.status)")
             Text("Nickename: \(currentCharacter.nickname)")
             Text("Appears in Seasons: \(convertedApperances)")
             /*
