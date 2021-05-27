@@ -12,6 +12,7 @@ struct characterProfile: View {
     var body: some View {
         
         VStack {
+            Image(uiImage: VM.init().urlToImage(currentCharacter.img)).resizable()
             Text("Name: \(currentCharacter.name)")
             Text("\(currentCharacter.occupation.joined(separator: "\n"))")
             Text("\(currentCharacter.status)")

@@ -11,25 +11,25 @@ import Alamofire
 
 struct alamoTest: View {
     @State var searchText:String = ""
-    var planets = ["Mercury", "Venus", "Earth", "Mars"]
+    
     var body: some View {
         NavigationView {
             List {
                 TextField("Search", text: $searchText)
-                    .padding(7)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(8)
-                
-                ForEach(
-                    planets.filter {
-                        searchText.isEmpty ||
-                            $0.localizedStandardContains(searchText)
-                    },
-                    id: \.self
-                ) { eachPlanet in
-                    Text(eachPlanet)
+                                    .padding(7)
+                                    .background(Color(.systemGray6))
+                                    .cornerRadius(8)
+                ForEach(0..<someData.count) { characters in
+                    NavigationLink(destination: characterProfile.init(currentCharacter: CC.init().fetchCharacter(someData[characters]))) {
+                        LazyHStack {
+                            Image(uiImage: VM.init().urlToImage(someData[characters].img)
+                            ).renderingMode(.original).resizable().frame(minWidth: 0, idealWidth: 100, maxWidth: 50.0, minHeight: 0, idealHeight: 100, maxHeight: .infinity, alignment: .center).cornerRadius(3.0)
+                            Text("\(someData[characters].name)")
+                        }
+                    }
                 }
             }
+            .navigationBarTitle("Breaking Bad Characters", displayMode: NavigationBarItem.TitleDisplayMode.inline)
         }
     }
 }
@@ -40,19 +40,6 @@ struct alamoTest_Previews: PreviewProvider {
     }
 }
 
-
-struct alamoCharacter: Codable, Hashable {
-    let name, birthday: String
-    let occupation: [String]
-    let img: String
-    let status, nickname: String
-    let appearance: [Int]
-}
-
-class apiViaAlamo {
-    private let apiSourceUrl = URL(string: "https://breakingbadapi.com/api/characters")!
-    
-    //    func alamoFetch() -> alamoCharacter {
-    //        AF.request(apiSourceUrl).responseDecodable(of: alamoCharacter.self)
-    //    }
-}
+//class <#name#>: <#super class#> {
+//    <#code#>
+//}

@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-struct CharacterDetails: Codable, Hashable {
+struct CharacterDetails: Codable{
     let name, birthday: String
     let occupation: [String]
     let img: String
@@ -16,4 +16,18 @@ struct CharacterDetails: Codable, Hashable {
 }
 typealias CharacterArray = [CharacterDetails]
 
+extension CharacterDetails {
+    static func filterChar(_ characters: [CharacterDetails], search: String) -> [CharacterDetails] {
+        let filtered = characters.filter {
+            $0.name.contains(search)
+        }
+        return filtered
+    }
+}
 
+//extension Character {
+//
+//  static func filteredCharacter(_ charecters: [Character]) -> [Character] {
+//    let filteredCharecters = charecters.filter { $0.category.contains("Breaking Bad") }
+//    return filteredCharecters
+//  }
